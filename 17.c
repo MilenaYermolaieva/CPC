@@ -17,8 +17,8 @@ int main()
     int count = 0;
     while(str[count++]!='\0');
     if(palindrom(str, count - 1)){
-        printf("Паліднорм.");
+        printf("Паліндром.");
     }else{
-        printf("Не паліднорм.");
+        printf("Не паліндром.");
     }
 }
