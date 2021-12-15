@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 int main()
   //Увести п’ять чисел і знайти найбільше з них.
