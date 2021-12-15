@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-//Ввести ціле число і визначити, чи правильно, що в його запису є дві однакові цифри, що НЕ обов’язково стоять рядом.
-
+/*
+Ввести натуральне число і визначити, які цифри
+зустрічаються декілька разів.
+*/
 char samenumber(char s[], int n)
 {
     int a=0;
@@ -27,8 +30,11 @@ char samenumber(char s[], int n)
 
 int main() {
   char str[100];
-    printf("Введіть ціле число >=0 :\n");
-    scanf("%s", str);
+    do{
+        printf("Введіть ціле число >=0 :\n");
+        scanf("%s", str);
+    }
+    while(atoi(str)<0);
     int count = 0;
     while(str[count++]!='\0');
     if(samenumber(str, count-1)){
